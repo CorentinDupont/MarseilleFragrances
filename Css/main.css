@@ -1,0 +1,54 @@
+/*ALL*/
+
+html {
+    margin: 0;
+}
+
+body {}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*HEADER*/
+
+header {
+    background-color: #C2B3CC;
+}
+
+.ar_connexion_panier_header {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+.image_compte_header {
+    width: 10%;
+    margin-right: 20px;
+}
+
+.image_panier_header {
+    width: 10%;
+    margin-right: 20px;
+}
+
+.ar_compte_header {}
+
+.ar_panier_header {}
+
+.ar_all_logo_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ar_logo1_header {}
+
+.ar_logo2_header {}
+
+.ar_liens_header {
+    display: flex;
+    justify-content: space-around;
+}

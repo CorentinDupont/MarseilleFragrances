@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jQuery/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <!--    <script type="text/javascript" src="slick-1.8.0/slick/slick.min.js"></script>-->
+    <!--    <link rel="stylesheet" type="text/css" href="slick-1.8.0/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.0/slick/slick-theme.scss" />-->
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="index_css" >
+    <div ng-app="myApp" >
+        <header ng-controller="indexCtrl">
+            <div class="ar_connexion_panier_header">
+                <div class="ar_compte_header" ng-init="logo_compte_header = 'Svg/ic_person_24px.svg'">
+                    <a ng-href="/{{'useraccount.html'}}">
+                        <img class="image_compte_header" ng-src="{{logo_compte_header}}">Mon compte
+                    </a>
+                </div>
+                <div class="ar_panier_header" ng-init="logo_panier_header = 'Svg/ic_work_24px.svg'">
+                    <a ng-href="">
+                        <img class="image_panier_header" ng-src="{{logo_panier_header}}">Panier                   
+                    </a>
+                </div>
+            </div>
+            <div class="ar_all_logo_header">
+                <div ng-init="logo1_header = 'Images/citta_logo.png'">
+                    <img class="ar_logo1_header" ng-src="{{logo1_header}}">
+                </div>
+                <div ng-init="logo2_header = 'Images/logo-cdp-2016blanc.png'">
+                    <img class="ar_logo2_header" ng-src="{{logo2_header}}">
+                </div>
+            </div>
+            <div class="ar_liens_header">
+                <a href="#/!">Accueil</a>
+                <a href="#!history">Notre Histoire</a>
+                <a href="#!shop">La boutique en ligne</a>
+                <a href="#!findus">Nous trouver</a>
+                <a href="#!company">Notre Entreprise</a>
+                <a href="#!contact">Contact</a>
+            </div>
+            
+        </header>
+        <div ng-view></div>
+    </div>
+    
+    <footer>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="indexCtrl.js"></script>
+    <script src="contactCtrl.js"></script>
+    
+</body>
+
+</html>
