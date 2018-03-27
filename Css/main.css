@@ -16,6 +16,7 @@ a {
 
 header {
     background-color: #C2B3CC;
+    width: 100%;
 }
 
 .ar_connexion_panier_header {
@@ -39,14 +40,18 @@ header {
 .ar_panier_header {}
 
 .ar_all_logo_header {
+    display: block;
+}
+
+.ar_logo1_header {
     display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
-.ar_logo1_header {}
-
-.ar_logo2_header {}
+.ar_logo2_header {
+    display: flex;
+    justify-content: center;
+}
 
 .ar_liens_header {
     display: flex;
